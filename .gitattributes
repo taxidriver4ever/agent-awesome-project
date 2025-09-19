@@ -1,6 +1,11 @@
 *py filter=lfs diff=lfs merge=lfs -text
-*.py filter=lfs diff=lfs merge=lfs -text
 D:/AgentProject/agent-awesome-project/back-end-python/chunkit_fronted filter=lfs diff=lfs merge=lfs -text
 /d/AgentProject/agent-awesome-project/back-end-python/chunkit_fronted/** filter=lfs diff=lfs merge=lfs -text
 back-end-python/** filter=lfs diff=lfs merge=lfs -text
-python-back-end/** filter=lfs diff=lfs merge=lfs -text
+*.pkl filter=lfs diff=lfs merge=lfs -text
+*.h5 filter=lfs diff=lfs merge=lfs -text
+*.pt filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.tar.gz filter=lfs diff=lfs merge=lfs -text
+*.bin filter=lfs diff=lfs merge=lfs -text
+*.dat filter=lfs diff=lfs merge=lfs -text
