@@ -33,11 +33,11 @@
                             style="display: flex;">
                             <ElButton @click="AcceptRequest(index)" class="accept-button">Accept</ElButton>
                         </div>
-                        <div v-else-if="newFriend.status === '1'" style="background-color: rgb(60, 60, 60);display: flex; margin-left: 50px; height: 60%; align-items: center;">
-                            <h1 style="margin: 0 5px;">Accepted</h1>
+                        <div v-else-if="newFriend.status === '1'" style="font-size: 10px;background-color: rgb(60, 60, 60);display: flex; margin-left: 50px; height: 60%; align-items: center;">
+                            <h2 style="margin: 0 5px;">Accepted</h2>
                         </div>
-                        <div v-else-if="newFriend.status === '2'" style="background-color: rgb(60, 60, 60);display: flex; margin-left: 50px; height: 60%; align-items: center;">
-                            <h1 style="margin: 0 10px;">Expired</h1>
+                        <div v-else-if="newFriend.status === '2'" style="font-size: 10px;   background-color: rgb(60, 60, 60);display: flex; margin-left: 50px; height: 60%; align-items: center;">
+                            <h2 style="margin: 0 10px;">Expired</h2>
                         </div>
                     </ElMenuItem>
                 </ElSubMenu>

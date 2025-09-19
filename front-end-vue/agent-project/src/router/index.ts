@@ -7,6 +7,7 @@ import Nothing from '@/views/Nothing.vue'
 import Session from '@/views/Session.vue'
 import Contact from '@/views/Contact.vue'
 import Nothing2 from '@/views/Nothing2.vue'
+import VoiceToAi from '@/views/VoiceToAi.vue'
 import axios from 'axios'
 import { ElMessage } from 'element-plus'
 
@@ -60,6 +61,12 @@ const router = createRouter({
           ]
         }
       ]
+    },
+    {
+      path: '/VoiceToAi',
+      component: VoiceToAi,
+      name: 'VoiceToAi',
+      meta: { requiresAuth: true }
     }
   ],
 })

@@ -1,6 +1,6 @@
 <template>
     <ElAside
-        style="display: flex;flex-direction: column;  width: 32vh; height: 100vh; background-color: rgb(40, 40, 40);">
+        style="display: flex;flex-direction: column;  width: 32vh; height: 100vh; background-color: rgb(40, 40, 40);overflow: hidden;">
         <ElHeader style="display: flex; height: 8vh; align-items: center; flex-direction: row;">
             <div style="display: flex;">
                 <ElInput placeholder="search" class="chat-search-all" :prefix-icon="Search"></ElInput>

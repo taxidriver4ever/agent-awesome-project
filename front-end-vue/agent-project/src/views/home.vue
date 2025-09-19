@@ -40,7 +40,7 @@
                 <button @click="ChatWithAi">Chat with AI</button>
                 <button>Personal Details</button>
                 <button @click="Friends">Friends</button>
-                <button>Create Session</button>
+                <button @click="VoiceToAi">Voice to AI</button>
                 <button>Settings</button>
             </div>
             <div style="text-align: center; margin-top: 200px;">
@@ -768,6 +768,25 @@ async function ChatWithAi() {
             localStorage.removeItem("uuid");
         }
         else window.location.href = "ChatWithAi"
+    }).catch(e => {
+        ElMessage.error(e);
+    })
+}
+async function VoiceToAi() {
+    await axios({
+        url: "http://127.0.0.1:8080/ai/nothing",
+        method: "Get",
+        headers: {
+            'id': localStorage.getItem("id"),
+            'uuid': localStorage.getItem("uuid")
+        }
+    }).then(res => {
+        if (res.data === "Not logged in") {
+            LoginForm.value = true;
+            localStorage.removeItem("id");
+            localStorage.removeItem("uuid");
+        }
+        else window.location.href = "/VoiceToAi"
     }).catch(e => {
         ElMessage.error(e);
     })

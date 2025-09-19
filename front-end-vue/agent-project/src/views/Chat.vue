@@ -1,5 +1,5 @@
 <template>
-    <ElContainer style="display: flex;height: 100vh; background-color: rgb(25, 25, 25);">
+    <ElContainer style="display: flex; height: 100vh; background-color: rgb(25, 25, 25);overflow: hidden;">
         <ElHeader style="padding-left: 15px; height: 8vh;display:flex; align-items: center; color: white;">
             {{ receiverName }}
         </ElHeader>
